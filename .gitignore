@@ -1,0 +1,5 @@
+node_modules
+.vscode
+
+# any sensitive headers / URL parameters, etc, for example:
+constants/http-request-info.js
