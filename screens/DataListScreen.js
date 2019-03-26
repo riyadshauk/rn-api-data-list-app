@@ -3,7 +3,8 @@ import React from 'react';
 import {
   ScrollView, StyleSheet, Text, FlatList,
 } from 'react-native';
-import axios from 'axios'; // you can also use axios for fetching (might be easier for post requests)
+// eslint-disable-next-line max-len
+// import axios from 'axios'; // you can also use axios for fetching (might be easier for sending post requests)
 
 
 type Props = {};
@@ -72,9 +73,10 @@ export default class DataListScreen extends React.Component<Props, State> {
       return <Text>Loading...</Text>;
     }
     return (
+      // eslint-disable-next-line no-use-before-define
       <ScrollView style={styles.container}>
         <FlatList
-          data={items.map(item => (
+          data={items.map((item: any) => (
             { key: item.title }
           ))}
           renderItem={({ item }) => <Text>{item.key}</Text>}
