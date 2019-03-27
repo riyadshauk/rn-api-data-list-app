@@ -6,7 +6,9 @@
     "ios": "expo start --ios",
     "eject": "expo eject",
     "test": "node ./node_modules/jest/bin/jest.js --watchAll",
-    "flow": "flow"
+    "flow": "flow",
+    "encrypt": "# Ex: 7z a -p -mx=0 -mhe -t7z outputFile inputFiles",
+    "unencrypt": "7z e constants/urlRequestInfo.7z && 7z e components/CustomFlatList.7z"
   },
   "jest": {
     "preset": "jest-expo"
